@@ -1,0 +1,47 @@
+soc-detection-lab/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── docs/
+│   ├── setup-guide.md
+│   ├── architecture.md
+│   ├── mitre-mapping.md
+│   └── screenshots/
+├── infrastructure/
+│   ├── vagrant/
+│   │   └── Vagrantfile
+│   └── docker/
+│       ├── docker-compose.yml
+│       └── Dockerfile
+├── splunk-config/
+│   ├── inputs.conf
+│   ├── props.conf
+│   ├── indexes.conf
+│   └── alert_actions.conf
+├── spl/
+│   ├── detection-queries/
+│   │   ├── brute-force-detection.spl
+│   │   ├── correlation-rules.spl
+│   │   └── threat-hunting.spl
+│   ├── dashboards/
+│   │   └── brute-force-monitoring.xml
+│   └── alerts/
+│       ├── real-time-alert.spl
+│       └── scheduled-alert.spl
+├── attacks/
+│   ├── hydra-scripts/
+│   │   └── brute-force.sh
+│   ├── python/
+│   │   ├── ssh_brute.py
+│   │   └── password_spray.py
+│   └── wordlists/
+│       └── custom_passwords.txt
+├── scripts/
+│   ├── setup.sh
+│   ├── test-detection.sh
+│   └── generate-logs.sh
+└── .github/
+    ├── workflows/
+    │   └── validate-spl.yml
+    └── ISSUE_TEMPLATE/
+        └── lab-issue.md
