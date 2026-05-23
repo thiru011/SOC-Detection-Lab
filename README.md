@@ -36,4 +36,30 @@ This project demonstrates:
 ---
 
 ## 🏗️ Architecture
-
+┌─────────────────────────────────────────┐
+│           SOC Detection Lab             │
+├─────────────────────────────────────────┤
+│   Kali Linux (Splunk + Attack Tools)    │
+│  ┌────────────────────────────────────┐ │
+│  │        Splunk Enterprise           │ │
+│  │  ├── Log Ingestion (port 9997)     │ │
+│  │  ├── SPL Detection Queries         │ │
+│  │  ├── Alert Rules                   │ │
+│  │  └── Dashboards                    │ │
+│  └────────────────────────────────────┘ │
+│                   ▲                     │
+│                   │ Auth Logs           │
+│                   │                     │
+│  ┌────────────────────────────────────┐ │
+│  │     Attack Simulation              │ │
+│  │  └── Hydra (SSH Brute Force)       │ │
+│  └────────────────────────────────────┘ │
+├─────────────────────────────────────────┤
+│     Target: Ubuntu VM (SSH Server)      │
+│  ┌────────────────────────────────────┐ │
+│  │    Vulnerable Users & Services     │ │
+│  │  ├── SSH (port 22)                 │ │
+│  │  ├── Weak Credentials              │ │
+│  │  └── Auth Log Forwarding           │ │
+│  └────────────────────────────────────┘ │
+└─────────────────────────────────────────┘
