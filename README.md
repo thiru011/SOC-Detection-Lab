@@ -16,29 +16,34 @@ This project demonstrates:
 - **MITRE ATT&CK Mapping**: Technique T1110 (Brute Force)
 
 ## 🏗️ Architecture
+```
 ┌─────────────────────────────────────────┐
-│ SOC Detection Lab │
+│           SOC Detection Lab             │
 ├─────────────────────────────────────────┤
-│ Kali Linux (Splunk + Attack Tools) │
-│ ┌────────────────────────────────────┐ │
-│ │ Splunk Enterprise │ │
-│ │ ├── Log Ingestion (port 9997) │ │
-│ │ ├── SPL Detection Queries │ │
-│ │ ├── Alert Rules │ │
-│ │ └── Dashboards │ │
-│ └────────────────────────────────────┘ │
-│ ▲ │
-│ │ Auth Logs │
-│ │ │
-│ ┌────────────────────────────────────┐ │
-│ │ Attack Simulation Tools │ │
-│ │ ├── Hydra │ │
-│ │ ├── Medusa │ │
-│ │ └── Custom Python Scripts │ │
-│ └────────────────────────────────────┘ │
+│   Kali Linux (Splunk + Attack Tools)    │
+│  ┌────────────────────────────────────┐ │
+│  │        Splunk Enterprise           │ │
+│  │  ├── Log Ingestion (port 9997)     │ │
+│  │  ├── SPL Detection Queries         │ │
+│  │  ├── Alert Rules                   │ │
+│  │  └── Dashboards                    │ │
+│  └────────────────────────────────────┘ │
+│                   ▲                     │
+│                   │ Auth Logs           │
+│                   │                     │
+│  ┌────────────────────────────────────┐ │
+│  │     Attack Simulation Tools        │ │
+│  │  ├── Hydra                         │ │
+│  │  ├── Medusa                        │ │
+│  │  └── Custom Python Scripts         │ │
+│  └────────────────────────────────────┘ │
 ├─────────────────────────────────────────┤
-│ Target: Ubuntu VM (SSH Server) │
-│ ┌────────────────────────────────────┐ │
-│ │ Vulnerable Users & Services │ │
-│ └────────────────────────────────────┘ │
+│     Target: Ubuntu VM (SSH Server)      │
+│  ┌────────────────────────────────────┐ │
+│  │    Vulnerable Users & Services     │ │
+│  │  ├── SSH (port 22)                 │ │
+│  │  ├── Weak Credentials              │ │
+│  │  └── Auth Log Forwarding           │ │
+│  └────────────────────────────────────┘ │
 └─────────────────────────────────────────┘
+```
