@@ -34,8 +34,6 @@ This project demonstrates:
 │  ┌────────────────────────────────────┐ │
 │  │     Attack Simulation Tools        │ │
 │  │  ├── Hydra                         │ │
-│  │  ├── Medusa                        │ │
-│  │  └── Custom Python Scripts         │ │
 │  └────────────────────────────────────┘ │
 ├─────────────────────────────────────────┤
 │     Target: Ubuntu VM (SSH Server)      │
