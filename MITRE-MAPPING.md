@@ -7,7 +7,7 @@
 | Tactic         | TA0006 – Credential Access           |
 | Technique      | T1110 – Brute Force                  |
 | Sub-technique  | T1110.001 – Password Guessing        |
-| Tool Used      | Hydra, Medusa, Custom Python Script  |
+| Tool Used      | Hydra  |
 | Target Service | SSH (port 22)                        |
 | Log Source     | /var/log/auth.log                    |
 
