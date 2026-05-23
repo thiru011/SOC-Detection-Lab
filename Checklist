@@ -1,0 +1,35 @@
+PHASE 1 – Environment Setup
+  □ VirtualBox installed
+  □ Kali Linux VM running
+  □ Ubuntu VM running
+  □ Both VMs on same network
+  □ VMs can ping each other
+
+PHASE 2 – Splunk Setup
+  □ Splunk installed on Kali
+  □ Splunk opens at localhost:8000
+  □ Forwarder installed on Ubuntu
+  □ Forwarder sending to Splunk (port 9997)
+  □ Receiving port configured in Splunk
+
+PHASE 3 – Attack Simulation
+  □ testuser created on Ubuntu
+  □ SSH service running on Ubuntu
+  □ Hydra attack launched from Kali
+  □ Logs visible in /var/log/auth.log
+  □ Logs appearing in Splunk
+
+PHASE 4 – Detection
+  □ Basic failed login query works
+  □ Brute force detection query works
+  □ Compromise detection query works
+  □ Alert created and configured
+
+PHASE 5 – Documentation
+  □ Dashboard created with spike graph
+  □ All screenshots taken
+  □ Screenshots uploaded to GitHub
+  □ MITRE-MAPPING.md created
+  □ Detection.md properly formatted
+  □ README.md has screenshots showing
+  □ Repo has description and tags
