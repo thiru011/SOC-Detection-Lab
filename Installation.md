@@ -103,8 +103,78 @@ hydra -l testuser -P /usr/share/wordlists/rockyou.txt UBUNTU_IP ssh -t 4 -V
 
 ## Networking Setup (VirtualBox)
 
-Both VMs must be on the same Host-Only network:
+## 🌐 Configure Networking Between Virtual Machines
 
-1. VirtualBox → **File** → **Host Network Manager** → **Create** (Your's Own Network)
-2. For each VM → **Settings** → **Network** → **Create A NAT Network of your own** → **NAT Network** → **Your's Network**
-3. Start both VMs and run `ip a` to get their IPs
+### Step 1 – Create a Host Network
+In VirtualBox:
+
+```text
+File → Host Network Manager → Create
+```
+
+This creates your own private virtual network for communication between VMs.
+
+---
+
+### Step 2 – Configure NAT Network for Internet Access
+For each VM:
+
+```text
+Settings → Network
+```
+
+#### Adapter 1
+- ✔ Enable Network Adapter
+- Attached to: `NAT Network`
+- Name: Your custom NAT Network
+
+This provides internet connectivity to the VMs.
+
+---
+
+### Step 3 – (Optional) Add Host-Only Adapter
+To allow direct communication between VMs and the host machine:
+
+#### Adapter 2
+- ✔ Enable Network Adapter
+- Attached to: `Host-Only Adapter`
+- Name: `vboxnet0`
+
+---
+
+### Step 4 – Start Both Virtual Machines
+Boot both:
+- Kali Linux VM
+- Ubuntu VM
+
+---
+
+### Step 5 – Verify IP Addresses
+Run the following command on each VM:
+
+```bash
+ip a
+```
+
+Look for IP addresses such as:
+
+```text
+Kali Linux   → 192.168.100.10
+Ubuntu VM    → 192.168.100.30
+```
+
+These IP addresses will be used for:
+- SSH brute-force testing
+- Splunk log forwarding
+- Network communication between systems
+
+---
+
+### Step 6 – Test Connectivity
+From Kali Linux, test communication with Ubuntu:
+
+```bash
+ping 192.168.100.30
+```
+
+Successful replies confirm both VMs can communicate over the virtual network.
