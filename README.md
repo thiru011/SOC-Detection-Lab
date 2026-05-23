@@ -36,7 +36,7 @@
 ---
 
 ### 3. Splunk Detection Query Results
-![Detection Query](Screenshots/04-detection-query.png)
+![Detection Query](Screenshots/04-spl-query-results.png)
 
 ---
 
