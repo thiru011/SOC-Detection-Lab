@@ -161,21 +161,7 @@ index=main "Failed password"
 
 ---
 
-## 📸 Screenshots
 
-### Hydra Brute Force Attack Running
-![Hydra Attack](Screenshots/hydra-attack.png)
-
-### Failed Login Spike in Splunk
-![Splunk Dashboard](Screenshots/splunk-dashboard.png)
-
-### SPL Detection Query Results
-![SPL Results](Screenshots/spl-query-results.png)
-
-### Alert Configuration
-![Alert Config](Screenshots/alert-config.png)
-
----
 
 ## ⚠️ Disclaimer
 
