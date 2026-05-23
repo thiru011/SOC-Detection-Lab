@@ -1,38 +1,64 @@
+# =========================
+# Virtual Machines
+# =========================
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.vbox
+*.qcow2
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+splunk_logs/
+
+# =========================
 # Splunk
-*.splunk
-/opt/splunk/
-splunk.deb
+# =========================
+splunkforwarder/
+*.spl
+var/log/splunk/
 
-# Virtual Environment
-venv/
-env/
-*.pyc
+# =========================
+# Python
+# =========================
 __pycache__/
+*.pyc
+venv/
+.env
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+# =========================
+# OS Files
+# =========================
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-/var/log/
+# =========================
+# VS Code
+# =========================
+.vscode/
 
-# Credentials
+# =========================
+# Sensitive Files
+# =========================
 *.pem
 *.key
+*.crt
+secrets.txt
 credentials.txt
-.env
 
-# Temp files
+# =========================
+# Large Capture Files
+# =========================
+*.pcap
+*.pcapng
+
+# =========================
+# Temporary Files
+# =========================
 tmp/
 temp/
 *.tmp
-
-# Docker
-*.docker
