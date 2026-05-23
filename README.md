@@ -33,7 +33,7 @@
 ![Dashboard](Screenshots/05-dashboard.png)
 
 ### Splunk Alert
-![Dashboard](Screenshots/07-dashboard.png)
+![Dashboard](Screenshots/07-alert-triggered.png)
 
 ---
 
