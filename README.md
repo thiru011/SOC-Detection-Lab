@@ -18,7 +18,7 @@
 - [Detection Queries](Detection.md)
 - [MITRE ATT&CK Mapping](#-mitre-attck-mapping)
 - [Key Results](#-key-results)
-- [Screenshots](#-screenshots)
+- [Screenshots](#-Screenshots)
 - [Disclaimer](#️-disclaimer)
 
 ---
