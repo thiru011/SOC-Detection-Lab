@@ -1,0 +1,38 @@
+# Splunk
+*.splunk
+/opt/splunk/
+splunk.deb
+
+# Virtual Environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/var/log/
+
+# Credentials
+*.pem
+*.key
+credentials.txt
+.env
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Docker
+*.docker
