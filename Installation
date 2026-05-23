@@ -13,8 +13,6 @@ sudo /opt/splunk/bin/splunk restart
 # Using Hydra
 hydra -l testuser -P attacks/wordlists/custom_passwords.txt ssh://localhost
 
-# Using Python script
-python3 attacks/python/ssh_brute.py
 
 4. Detect Attacks
 # Run detection queries from spl/ directory in Splunk Search
