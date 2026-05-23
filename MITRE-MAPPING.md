@@ -1,3 +1,5 @@
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-T1110-red)
+![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 # 🎯 MITRE ATT&CK Mapping
 
 Detailed mapping of the attack simulated in this lab to the MITRE ATT&CK framework.
