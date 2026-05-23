@@ -23,17 +23,35 @@
 
 ## 📸 Screenshots
 
-### Hydra Brute Force Attack
-![Hydra Attack](Screenshots/01-hydra-attack.png)
+## 📸 Project Screenshots
 
-### Ubuntu Authentication Logs
-![Auth Logs](Screenshots/02-auth-log-failures.png)
+### 1. Hydra SSH Brute Force Attack
+![Hydra Attack](screenshots/01-hydra-attack.png)
 
-### Splunk Dashboard
-![Dashboard](Screenshots/05-dashboard.png)
+---
 
-### Splunk Alert
-![Dashboard](Screenshots/07-alert-triggered.png)
+### 2. Failed SSH Login Logs
+![Auth Logs](screenshots/02-auth-log-failures.png)
+
+---
+
+### 3. Splunk Detection Query Results
+![Detection Query](screenshots/04-detection-query.png)
+
+---
+
+### 4. Splunk Dashboard Visualization
+![Dashboard](screenshots/05-dashboard.png)
+
+---
+
+### 5. Alert Configuration
+![Alert Config](screenshots/06-alert-config.png)
+
+---
+
+### 6. Triggered Alert
+![Triggered Alert](screenshots/07-alert-triggered.png)
 
 ---
 
