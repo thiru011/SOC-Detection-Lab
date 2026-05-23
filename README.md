@@ -21,6 +21,17 @@
 - [Screenshots](#-Screenshots)
 - [Disclaimer](#️-disclaimer)
 
+## 📸 Screenshots
+
+### Hydra Brute Force Attack
+![Hydra Attack](screenshots/01-hydra-attack.png)
+
+### Ubuntu Authentication Logs
+![Auth Logs](screenshots/02-auth-log-failures.png)
+
+### Splunk Dashboard
+![Dashboard](screenshots/05-dashboard.png)
+
 ---
 
 ## 🎯 Project Overview
