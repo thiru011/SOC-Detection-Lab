@@ -24,13 +24,13 @@
 ## 📸 Screenshots
 
 ### Hydra Brute Force Attack
-![Hydra Attack](screenshots/01-hydra-attack.png)
+![Hydra Attack](Screenshots/01-hydra-attack.png)
 
 ### Ubuntu Authentication Logs
-![Auth Logs](screenshots/02-auth-log-failures.png)
+![Auth Logs](Screenshots/02-auth-log-failures.png)
 
 ### Splunk Dashboard
-![Dashboard](screenshots/05-dashboard.png)
+![Dashboard](Screenshots/05-dashboard.png)
 
 ---
 
