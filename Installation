@@ -1,0 +1,21 @@
+1. Install Splunk
+# Download Splunk
+wget -O splunk.deb 'https://download.splunk.com/products/splunk/releases/9.0.4/linux/splunk-9.0.4-de405f4a7979-linux-2.6-amd64.deb'
+# Install
+sudo dpkg -i splunk.deb
+sudo /opt/splunk/bin/splunk start --accept-license
+
+2. Configure Log Monitoring
+sudo cp splunk-config/inputs.conf /opt/splunk/etc/system/local/
+sudo /opt/splunk/bin/splunk restart
+
+3. Run Attack Simulation
+# Using Hydra
+hydra -l testuser -P attacks/wordlists/custom_passwords.txt ssh://localhost
+
+# Using Python script
+python3 attacks/python/ssh_brute.py
+
+4. Detect Attacks
+# Run detection queries from spl/ directory in Splunk Search
+cat spl/detection-queries/brute-force-detection.spl
