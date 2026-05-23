@@ -105,6 +105,6 @@ hydra -l testuser -P /usr/share/wordlists/rockyou.txt UBUNTU_IP ssh -t 4 -V
 
 Both VMs must be on the same Host-Only network:
 
-1. VirtualBox → **File** → **Host Network Manager** → **Create** (vboxnet0)
-2. For each VM → **Settings** → **Network** → **Adapter 2** → **Host-only Adapter** → **vboxnet0**
+1. VirtualBox → **File** → **Host Network Manager** → **Create** (Your's Own Network)
+2. For each VM → **Settings** → **Network** → **Create A NAT Network of your own** → **NAT Network** → **Your's Network**
 3. Start both VMs and run `ip a` to get their IPs
